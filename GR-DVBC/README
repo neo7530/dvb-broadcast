@@ -1,0 +1,54 @@
+# Copyright 2018 Ron Economos
+#
+# This file is part of gr-dvbc
+#
+# gr-dvbc is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3, or (at your option)
+# any later version.
+#
+# gr-dvbc is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with gr-dvbc; see the file COPYING.  If not, write to
+# the Free Software Foundation, Inc., 51 Franklin Street,
+# Boston, MA 02110-1301, USA.
+
+gr-dvbc
+======
+
+Author: Ron Economos
+Email: <w6rz@comcast.net>
+
+The goal of this project is to build GNU Radio blocks that implement
+the DVB-C digital television standard EN 300 429 V1.2.1:
+
+http://www.etsi.org/deliver/etsi_en/300400_300499/300429/01.02.01_60/en_300429v010201p.pdf
+
+Requirements:
+
+A DVB-C receiver. This module was tested with a PCTV 292e USB receiver.
+It is connected to the DVB-C transmitter with a coaxial cable and 30 dB
+attenuator for loopback testing.
+
+Usage:
+
+A test flowgraph is included in apps/dvbc_tx.grc. The test Transport Stream is
+available for download here:
+
+http://www.w6rz.net/adv32qam.ts
+
+Build instructions:
+
+    mkdir build
+    cd build
+    cmake ../
+    make
+    sudo make install
+    sudo ldconfig
+
+Contributions are welcome!
+

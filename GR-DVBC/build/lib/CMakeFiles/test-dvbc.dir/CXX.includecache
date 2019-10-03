@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marco/compile/gr-dvbc/lib/qa_dvbc.cc
+qa_dvbc.h
+/home/marco/compile/gr-dvbc/lib/qa_dvbc.h
+
+/home/marco/compile/gr-dvbc/lib/qa_dvbc.h
+gnuradio/attributes.h
+-
+cppunit/TestSuite.h
+-
+
+/home/marco/compile/gr-dvbc/lib/test_dvbc.cc
+config.h
+/home/marco/compile/gr-dvbc/lib/config.h
+cppunit/TextTestRunner.h
+-
+cppunit/XmlOutputter.h
+-
+gnuradio/unittests.h
+-
+qa_dvbc.h
+/home/marco/compile/gr-dvbc/lib/qa_dvbc.h
+iostream
+-
+fstream
+-
+
